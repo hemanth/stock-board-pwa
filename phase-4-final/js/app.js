@@ -15,7 +15,7 @@
     "ITC": "Indian Tobacco Company",
     "MARUTI": "Maruti",
     "BHARTIARTL": "Bharti Airtel Ltd",
-    "RELIANCE": "RELIANCE.",
+    "RELIANCE": "Reliance Industries Limited.",
     "ONGC": "Oil and Natural Gas Corporation Ltd",
     "NTPC": "NTPC Ltd",
     "SBIN": "State Bank of India"
