@@ -108,7 +108,6 @@
 
   const updateNetworkStatus = function() {
     let isOnline = navigator.onLine;
-
     let body = document.querySelector('body');
 
     if(isOnline && body.classList.contains('offline')) {
@@ -184,5 +183,15 @@ ServiceWorker Magic!
       app.fetchStock(stock);
     });
   });
+
+  // Load the initial/selected stock card.
+  if (localStorage.selectedStocks) {
+    app.stocksList = JSON.parse(localStorage.selectedStocks);
+    app.stocksList.forEach(function(stock) {
+      app.fetchStock(stock);
+    });
+  } else {
+    app.fetchStock('ITC').then(() => app.saveSelectedStock());
+  }
 
 }());
